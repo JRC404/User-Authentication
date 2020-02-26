@@ -2,6 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const user = require("./routes/user")
 const InitiateMongoServer = require('./config/db');
+require('dotenv').config();
+
 
 // initiate the Mongo DB server
 InitiateMongoServer();

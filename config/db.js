@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-const MONGOURI = "mongodb+srv://jacob:password123abc@usersignup-0cehi.mongodb.net/test?retryWrites=true&w=majority";
+require('dotenv').config();
+const MONGOURI = `mongodb+srv://jacob:${process.env.password}@usersignup-0cehi.mongodb.net/test?retryWrites=true&w=majority`;
 
 const InitiateMongoServer = async () => {
     try {
